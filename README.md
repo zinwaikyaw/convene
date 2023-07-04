@@ -19,16 +19,16 @@ To run the app locally, follow these steps:
 
 1. Clone this repository and navigate into the project
    ```sh
-   git clone https://github.com/nklmnatey/convene.git
+   git clone https://github.com/zinwaikyaw/convene.git
    cd convene
    ```
 2. Install necessary packages and dependencies
    ```sh
-   npm install
+   yarn install
    ```
 3. Run the app
    ```sh
-   npx expo start
+   yarn run android
    ```
 
 ## Screenshots
