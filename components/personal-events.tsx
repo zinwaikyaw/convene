@@ -1,6 +1,7 @@
 import { Image, View } from "react-native";
 import { MediumText, RegularText } from "./styled-text";
 import ETA from "./eta-card";
+import LOCATION from "./location-card";
 import dayjs from "dayjs";
 import "dayjs/locale/en";
 import relativeTime from "dayjs/plugin/relativeTime";
@@ -13,6 +14,7 @@ export default function PersonalEvents({
   start_date,
   start_time,
   event_description,
+  event_location,
 }: any) {
   const [eta, setEta] = useState("");
 
@@ -63,7 +65,10 @@ export default function PersonalEvents({
       </View>
       <View style={{ marginBottom: 8, gap: 8 }}>
         <MediumText>{event_title}</MediumText>
-        <ETA eta={eta} />
+        <View style={{ display: 'flex', flexDirection: 'row'}}>
+          <ETA eta={eta} />
+          <LOCATION location={event_location} />
+        </View>
         <MediumText>{event_description}</MediumText>
       </View>
     </View>

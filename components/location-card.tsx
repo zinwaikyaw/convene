@@ -2,7 +2,7 @@ import { View } from "react-native";
 import { Ionicons } from "@expo/vector-icons";
 import { BoldText } from "./styled-text";
 
-export default function ETA({ eta }: { eta: string }) {
+export default function LOCATION({ location }: { location: string }) {
   return (
     <View
       style={{
@@ -23,8 +23,8 @@ export default function ETA({ eta }: { eta: string }) {
           alignItems: "center",
         }}
       >
-        <Ionicons name="ios-alarm-outline" size={20} color={"coral"} />
-        <BoldText style={{ color: "coral" }}>{eta}</BoldText>
+        <Ionicons name="ios-location-outline" size={20} color={"coral"} />
+        <BoldText style={{ color: "coral" }}>{location}</BoldText>
       </View>
     </View>
   );

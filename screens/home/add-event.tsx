@@ -124,7 +124,7 @@ export default function AddEventScreen({ navigation }: any) {
         event_title: title,
         event_image: image,
         event_description: description,
-        event_location: "Ho Chi Minh, Vietnam",
+        event_location: "Ho Chi Minh",
         user_uid: user.uid,
       });
       setLoading(false),
